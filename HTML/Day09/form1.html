@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/submit-application" method="post">
+      <h2>Job Application Form</h2>
+
+      <!-- Text Input -->
+      <label>
+        Full Name:
+        <input type="text" name="fullName" required /> </label
+      ><br /><br />
+
+      <!-- Email -->
+      <label>
+        Email:
+        <input type="email" name="email" required /> 
+        </label
+      ><br /><br />
+
+      <!-- Select Tag -->
+      <label>
+        Position Applying For:
+        <select name="position" required>
+          <option value="">--Select--</option>
+          <option value="frontend">Frontend Developer</option>
+          <option value="backend">Backend Developer</option>
+          <option value="fullstack">Full Stack Developer</option>
+          <option value="uiux">UI/UX Designer</option>
+        </select> </label
+      ><br /><br />
+
+      <!-- Radio Buttons -->
+      <label>Preferred Work Location:</label><br />
+      <input type="radio" name="location" value="remote" id="remote" required />
+      <label for="remote">Remote</label><br />
+      <input type="radio" name="location" value="onsite" id="onsite" />
+      <label for="onsite">On-Site</label><br />
+      <input type="radio" name="location" value="hybrid" id="hybrid" />
+      <label for="hybrid">Hybrid</label><br /><br />
+
+      <!-- Checkboxes -->
+      <label>Skills (Select all that apply):</label><br />
+      <input type="checkbox" name="skills" value="javascript" id="js" />
+      <label for="js">JavaScript</label><br />
+      <input type="checkbox" name="skills" value="python" id="py" />
+      <label for="py">Python</label><br />
+      <input type="checkbox" name="skills" value="react" id="react" />
+      <label for="react">React</label><br />
+      <input type="checkbox" name="skills" value="node" id="node" />
+      <label for="node">Node.js</label><br /><br />
+
+      <!-- Textarea -->
+      <label>
+        Why should we hire you?
+        <textarea
+          name="aboutYou"
+          rows="4"
+          cols="50"
+          placeholder="Tell us about yourself..."
+        ></textarea></label
+      ><br /><br />
+
+      <!-- File Upload -->
+      <label>
+        Upload Resume:
+        <input type="file" name="resume" /> </label
+      ><br /><br />
+
+      <!-- Submit Button -->
+      <button type="submit">Submit Application</button>
+    </form>
+  </body>
+</html>

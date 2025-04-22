@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/book-appointment" method="post">
+      <label
+        >Patient Name: <input type="text" name="patientName" required
+      /></label>
+      <br />
+      <label>Contact Number: <input type="tel" name="contact" /></label>
+      <br />
+      <label>Doctor Name: <input type="text" name="doctorName" /></label>
+      <br />
+      <label
+        >Preferred Date: <input type="date" name="appointmentDate"
+      /></label>
+      <br />
+      <label>Symptoms: <textarea name="symptoms"></textarea></label>
+      <br />
+      <button type="submit">Book Appointment</button>
+    </form>
+  </body>
+</html>
